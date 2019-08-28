@@ -1,13 +1,35 @@
-extends ../layout
+
+
+extends layout
 
 block content
   h1= title
-  p Listing all books
-  p
-    a(href="/books/new") Create New Books
-  
-  each book in books
-    h2= book.title
-    include by_line
-    p= book.shortDescription()
-    a(href = "/books/" + book.id) Read More &rarr;
+
+  form(method='action', action='/books/search')
+    a.button.nav(href="/books/new") Create New Book
+    input(for='search' type='text', name='search', placeholder='Search..')
+    input(type='submit', value='Search', id="searchSubmit")
+    a.button(href="/books") Go Home
+
+
+  table
+    thead
+      tr
+        th Title
+        th Author
+        th Genre
+        th Year
+    tbody
+    each book in books
+     tr
+        td
+          a(href=`/books/${book.id}`)= book.title
+        td= book.author
+        td= book.genre
+        td= book.year
+
+  .pagination
+    - let page=1;
+    while page <= pages
+      a.button(href=`/books?query=${query?query:""}&page=${page}` class=`${activePage===page ? "active" : ""}`)= page
+      - page += 1;

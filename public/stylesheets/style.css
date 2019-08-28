@@ -1,40 +1,47 @@
 body {
   padding: 10px 50px 50px;
-  font: 18px "Garamond", serif;
+  font: 20px "Garamond", serif;
+  margin: auto;
+  max-width: 800px;
+  background-image: url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/dba1ae42-89a0-4a94-9bb3-47bbe9d5ac9c/drug13-afbc90bf-e5ac-4f1c-bd16-4d0340c3fb35.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2RiYTFhZTQyLTg5YTAtNGE5NC05YmIzLTQ3YmJlOWQ1YWM5Y1wvZHJ1ZzEzLWFmYmM5MGJmLWU1YWMtNGYxYy1iZDE2LTRkMDM0MGMzZmIzNS5qcGcifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6ZmlsZS5kb3dubG9hZCJdfQ.-6mqy9i1OCbj9ax7EDvDk6P2YbqiSgOM0hlIvi8aSJ8")
+
 }
 
 a {
-  color: #019875;
+  color: white;
   text-decoration: none;
   font-weight: bold;
   transition: 0.4s;
 }
 
   a:hover {
-    color: black;
+    color: blue;  
   }
 
 a.button, input[type=submit] {
-  color: white;
-  background: #019875;
+  background: navy;
   font-family: "Lucida Grande", Helvetica, Arial, sans-serif;
   padding: 10px 14px 12px;
-  font-size: 14px;
-  border-radius: 2px;
+  font-size: 18px;
+  border-radius: 35%;
   cursor: pointer;
 }
 
 form a.button, input[type=submit] {
-  margin-left: 140px;
+  margin-left: 20px;
   transition: 0.4s;
+  color: silver;
 }
 
 input[type=submit] {
   border: 0;
+
 }
 
   a.button:hover, input[type=submit]:hover {
-    background-color: #01b189;
+    background-color: lime;
+    border-radius: 35%;
+    color: black;
   }
 
 p {
@@ -64,7 +71,8 @@ tr {
 }
 
 tr:nth-child(2n) {
-  background: #E7E7E7;
+  background: silver;
+
 }
 
 td {
@@ -81,10 +89,12 @@ label {
 input {
   padding: 10px;
   font-family: "Lucida Grande", Helvetica, Arial, sans-serif;
-  font-size: 14px;
-  border-radius: 2px;
-  border-color: #E7E7E7;
+  font-size: 25px;
+  background: navy;
+  border-radius: 25px;
+  border-color: gold;
   transition: 0.4s;
+  color: aqua;
 }
 
 input[type=text] {
@@ -94,4 +104,18 @@ input[type=text] {
 
 .error {
   color: rgb(236, 15, 15);
+}
+
+
+.pagination {
+  margin-top: 50px;
+  width: 100px;
+}
+
+
+.pagination a.button {
+  margin: 80px;
+  background:navy;
+  font-size: 15px;
+  border-radius: 25%;
 }
