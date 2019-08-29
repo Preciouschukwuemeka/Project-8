@@ -3,19 +3,20 @@ body {
   font: 20px "Garamond", serif;
   margin: auto;
   max-width: 800px;
-  background-image: url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/dba1ae42-89a0-4a94-9bb3-47bbe9d5ac9c/drug13-afbc90bf-e5ac-4f1c-bd16-4d0340c3fb35.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2RiYTFhZTQyLTg5YTAtNGE5NC05YmIzLTQ3YmJlOWQ1YWM5Y1wvZHJ1ZzEzLWFmYmM5MGJmLWU1YWMtNGYxYy1iZDE2LTRkMDM0MGMzZmIzNS5qcGcifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6ZmlsZS5kb3dubG9hZCJdfQ.-6mqy9i1OCbj9ax7EDvDk6P2YbqiSgOM0hlIvi8aSJ8")
-
+  background-size: small;
+  background-image: url("https://natlib.govt.nz/system/images/W1siZiIsIjIwMTcvMTEvMjAvMDhfNDVfMzBfMTBfc3VtbWVyX3JlYWRpbmdfNjY0LmpwZyJdXQ/summer-reading-664.jpg")
 }
 
 a {
-  color: white;
+  color: black;
   text-decoration: none;
   font-weight: bold;
   transition: 0.4s;
 }
 
   a:hover {
-    color: blue;  
+    color: black
+    ;  
   }
 
 a.button, input[type=submit] {
@@ -30,7 +31,7 @@ a.button, input[type=submit] {
 form a.button, input[type=submit] {
   margin-left: 20px;
   transition: 0.4s;
-  color: silver;
+  color: white;
 }
 
 input[type=submit] {
@@ -39,9 +40,9 @@ input[type=submit] {
 }
 
   a.button:hover, input[type=submit]:hover {
-    background-color: lime;
+    background-color: green;
     border-radius: 35%;
-    color: black;
+    color: white;
   }
 
 p {
@@ -70,9 +71,12 @@ tr {
   min-height: 50px;
 }
 
-tr:nth-child(2n) {
-  background: silver;
+tr:nth-child(1n) {
+  background: skyblue;
+}
 
+tr:nth-child(2n) {
+  background: skyblue;
 }
 
 td {
@@ -89,10 +93,9 @@ label {
 input {
   padding: 10px;
   font-family: "Lucida Grande", Helvetica, Arial, sans-serif;
-  font-size: 25px;
-  background: navy;
-  border-radius: 25px;
-  border-color: gold;
+  font-size: 16px;
+  background: black;
+  border-radius: 80px;
   transition: 0.4s;
   color: aqua;
 }
@@ -103,7 +106,7 @@ input[type=text] {
 }
 
 .error {
-  color: rgb(236, 15, 15);
+  color: red;
 }
 
 
@@ -114,7 +117,7 @@ input[type=text] {
 
 
 .pagination a.button {
-  margin: 80px;
+  margin: 3px;
   background:navy;
   font-size: 15px;
   border-radius: 25%;
